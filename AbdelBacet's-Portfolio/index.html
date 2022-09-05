@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abdel Bacet Outhman | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anybody:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="one">
+            <div class="top-nav-bar">
+                <!-- <img src="assets/abdelbacet-trans.gif" width="90px" alt=""> -->
+                <!-- <h1>AbdelBacet</h1> -->
+                <img src="assets/abd name.png" width="100px" alt="">
+                <ul class="menu-pc">
+                    <li onclick="scrollToElement('recent-works')">WEBSITES I'VE WORKED ON</li>
+                    <li onclick="scrollToElement('touch')">GET IN TOUCH</li>
+                </ul>
+                <div id="menuIcon" class="menu-mobile-icon" onclick="showMenu()">
+                    <img src="assets/Icon feather-menu1.png" width="20px" alt="Supportful logo" width="30px" height="auto">
+                </div>
+                <div id="menuHideIcon" class="menu-hide-mobile-icon" onclick="hideMenu()">
+                    <img src="assets/Icon feather-menu1.png" width="20px" alt="Supportful logo" width="30px" height="auto">
+                </div>
+            </div>
+            <ul id="menu-mobile" class="menu-mobile">
+                <li onclick="scrollToElement('recent-works')">WEBSITES I'VE WORKED ON</li>
+                    <li onclick="scrollToElement('touch')">GET IN TOUCH</li>
+            </ul>
+            <ul class="loop">
+                <li class="only-pc">Website development</li>
+                <li class="only-mobile">Website dev</li>
+                    <li>Quality work</li>
+                    <li>Satisfying results</li>
+                    <li class="only-pc">Website development</li>
+                    <li class="only-pc">Quality work</li>
+                    <li class="only-pc">Satisfying results</li>
+            </ul>
+            <div class="landing" data-fade="true">
+                <div class="landing-left">
+                    <img src="assets/abd descrip.png" class="landing-image animate fadeInUp" alt="">
+                    <p class="animate fadeInUp">Expect Only Quality Work.
+                        <br>
+                        Let's make something good together!
+                    </p>
+                    <div class="socials animate fadeInUp">
+                        <div class="social" style="background-color: #35FF69;" onclick="toLink('linkedin.com/in/abdel-bacet-outhman-956151178')"><img src="assets/linkedIn-icon.png"
+                                width="60%" alt=""></div>
+                        <a href="mailto:outhmanabdelbacet@gmail.com"><div class="social" style="background-color: #44CCFF;"><img src="assets/icons8-mail-50.png"
+                                width="60%" alt=""></div></a>
+                        <div class="social" style="background-color: #EFE951;" onclick="toLink('www.instagram.com/abdel.bacet/')"><img src="assets/icons8-instagram-50.png"
+                                width="60%" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="three">
+            <div class="three-content" id="recent-works">
+                <h1 class="only-pc">RECENT <br> WEBSITES I'VE DONE</h1>
+                <h1 class="only-mobile" style="font-size: 34px;text-align: center;">MY RECENT WORKS</h1>
+                <br><br><br>
+                <ul class="recent-works">
+                    <li onclick="toLink('www.supportful.world')">
+                        <div class="recent-works-image hover4" style="background-image: url('assets/supportful-laptop.png');"></div>
+                        <br>
+                        <h2>www.supportful.world</h2>
+                         <p>Client Website for Supportful company.</p>
+                     </li>
+                    <li onclick="toLink('abdelbacet-creator.github.io/creativeagency/brandIdentity/index.html')">
+                        <div id="hover1" class="recent-works-image hover5" style="background-image: url('assets/Screenshot 2022-07-26 105804.png');"></div>
+                        <br>
+                        <h2>Creative Agency Website</h2>
+                        <p>A digital art website template to showcase art works.</p>
+                    </li>
+                    <li onclick="toInsideLink('/Freeze/index.html')">
+                        <div id="hover1" class="recent-works-image hover1" style="background-image: url('assets/Screenshot\ 2022-08-15\ 141310.png');"></div>
+                        <br>
+                        <h2>FREEZE Drink Project</h2>
+                        <p>A product design website for freeze drink bottle.</p>
+                    </li>
+                    <li onclick="toInsideLink('/digitalArtGuide/index.html')">
+                        <div class="recent-works-image hover2" style="background-image: url('assets/artGuide-laptop.png');"></div>
+                        <br>
+                        <h2>Digital artist Portfolio</h2>
+                        <p>A digital artist portfolio website for collections showcase.</p>
+                    </li>
+                    <li onclick="toInsideLink('/travelAgency/index.html')">
+                        <div class="recent-works-image hover3" style="background-image: url('assets/travlAgency-laptop.png');"></div>
+                        <br>
+                        <h2>Travel Agency Website</h2>
+                        <p>A travel Agency website landing page.</p>
+                    </li>
+                    <li>
+                        <div class="recent-works-image hover6" style="background-image: url('assets/Screenshot\ 2022-09-05\ 130958.png');opacity: 0.4;"></div>
+                        <br>
+                        <h2>Website in prgress..</h2>
+                        <p>Latest client work..
+                            To be revealed soon!</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- <section class="two">
+            <div class="two-content">
+                <h1 class="only-pc">RECENT <br> PRODUCT RENDERS</h1>
+                <h1 class="only-mobile" style="font-size: 34px;text-align: center;">MY RECENT WORKS</h1>
+                <br><br><br>
+                <ul class="recent-works">
+                    <li>
+                        <div class="recent-works-image hover4" style="background-image: url('assets/supportful-laptop.png');"></div>
+                        <br>
+                        <h2>www.supportful.world</h2>
+                         <p>A digital art guide website to help showcase his work to help showcase.</p>
+                     </li>
+                    <li>
+                        <div id="hover1" class="recent-works-image hover2" style="background-image: url('assets/Screenshot 2022-07-26 105804.png');"></div>
+                        <br>
+                        <h2>Creative Agency Website</h2>
+                        <p>A digital art guide website to help showcase his work to help showcase.</p>
+                    </li>
+                    <li>
+                        <div class="recent-works-image hover1" style="background-image: url('assets/artGuide-laptop.png');"></div>
+                        <br>
+                        <h2>Digital artist Portfolio</h2>
+                        <p>A digital art guide website to help showcase his work to help showcase.</p>
+                    </li>
+                    <li>
+                        <div class="recent-works-image hover6" style="background-image: url('assets/travlAgency-laptop.png');"></div>
+                        <br>
+                        <h2>Travel Agency Website</h2>
+                        <p>A digital art guide website to help showcase his work to help showcase.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="four">
+            <div class="four-content">
+                <h1>PRICING</h1>
+                <br>
+                <p>QUALITY WORK GUARENTEED !
+                    <br>
+                    The prices listed below are for basic works, basic websites and simple product renders.
+                    <br>
+                    Prices of complex works vary accordingly.
+                    
+                </p>
+                <br>
+                <br>
+                <br>
+                <ul>
+                    <li>
+                        <h4>Website</h4>
+                        <br>
+                        <p>Starts with 200$</p>
+                        <p>( for basic website )</p>
+                        <br>
+                        <button>Let's Go</button>
+                    </li>
+                    <li>
+                        <h4>Product Render</h4>
+                        <br>
+                        <p>Starts with 100$ for single 3d model</p>
+                        <p>+ 20$ per photo</p>
+                        <br>
+                        <button>Let's Go</button>
+                    </li>
+                </ul>
+
+            </div>
+        </section> -->
+        <section class="five">
+            <div class="five-content">
+                <div class="get-in-touch" id="touch">
+                    <div class="get-in-touch-cont">
+                        <h1 class="only-pc">GET IN TOUCH</h1>
+                    <h1 class="only-mobile" style="font-size: 34px;">GET IN TOUCH</h1>    
+                    <p class="get-in-touch-p">I believe we can make a special things together!
+                        <br>
+                        To reach out for freelance work, feel free to submit the form <br> Or reach me 
+                        via email or social media links below.
+                        
+                    </p>
+                    <div class="socials animate fadeInUp" style="justify-content: flex-start;">
+                        <div class="social" style="background-color: #35FF69;" onclick="toLink('linkedin.com/in/abdel-bacet-outhman-956151178')"><img src="assets/linkedIn-icon.png"
+                            width="60%" alt=""></div>
+                    <a href="mailto:outhmanabdelbacet@gmail.com"><div class="social" style="background-color: #44CCFF;"><img src="assets/icons8-mail-50.png"
+                            width="60%" alt=""></div></a>
+                    <div class="social" style="background-color: #EFE951;" onclick="toLink('www.instagram.com/abdel.bacet/')"><img src="assets/icons8-instagram-50.png"
+                            width="60%" alt=""></div>
+                    </div>
+
+                    </div>
+                    <Form id="contact-us" action="https://getform.io/f/fe0b5d5b-bdb6-4337-b2e2-cf18aec7c728" method="POST">
+                        <div class="input-cont">
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="input-cont">
+                            <label for="emaili">Email Address*</label>
+                            <input type="email" name="email" id="emaili" required>
+                        </div>
+                        <div class="input-cont">
+                            <label for="phnNum">Phone number</label>
+                            <input type="tel" name="phonenumber" id="phnNum">
+                        </div>
+                        <div class="input-cont">
+                            <label for="name">Message*</label>
+                            <Textarea type="text" name="message" id="message" style="min-height: 5rem;"
+                                placeholder="Tell me how can i help you" required></Textarea>
+                        </div>
+                        <button type="button" value="Submit" id="btnsubmit" onclick="submitForm()">Send</button>
+                    </Form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
